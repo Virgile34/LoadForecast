@@ -1,0 +1,16 @@
+gam3.R RQ :
+	edf =~ k-1, warning !! (ca doit etre moins... augmente k !)
+
+
+	indicateur GCV (sqrt GCV =~ RMSE)
+
+
+	plot residualas, si on voit une "forme" => baddd (underfit)	
+		-> idée : refaire gam sur les residus avec bcp degré de liberté
+			intercept pas significatif ? les résidu sont bien centré
+			approximate signifiance significatif ? 
+
+
+	un effet par jour ? by = as.factor(WeekDays) par exemple (!il faut quand meme rajouter la variabe
+					WeekDays en linéaire, sinon on calcule juste un écart à la moyenne pas à celle du lundi...!)
+
